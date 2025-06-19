@@ -16,7 +16,7 @@ public abstract class Dipendente {
     }
 
     public void setStipendio(double stipendio) {
-        this.stipendio = stipendio;
+        this.stipendio = (int) stipendio;
     }
 
     public int getMatricola() {
