@@ -1,4 +1,4 @@
 package entities;
 
-public class DIpendenteFullTime {
+public class DIpendenteFullTime extends Dipendente{
 }

@@ -1,7 +1,7 @@
 package entities;
 import java.util.Random;
 
-public abstract class Dipendente {
+public abstract class Dipendente implements checkIn{
 
     private int matricola;
     private int stipendio;
@@ -25,5 +25,13 @@ public abstract class Dipendente {
 
     public void setMatricola(int matricola) {
         this.matricola = matricola;
+    }
+
+    private static int calculateSalary(){
+        if(DipendenteFullTime==true){
+            int stipendio=2500;
+        }else{
+            Dipendente
+        }
     }
 }

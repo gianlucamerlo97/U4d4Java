@@ -1,6 +1,6 @@
 package entities;
 
-public class DipendentePartTime {
+public class DipendentePartTime extends Dipendente {
     /**
      * Constructs a new object.
      */

@@ -1,4 +1,4 @@
 package entities;
 
-public class Dirigente {
+public class Dirigente extends Dipendente{
 }
