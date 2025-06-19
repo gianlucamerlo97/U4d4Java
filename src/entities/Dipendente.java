@@ -1,37 +1,37 @@
 package entities;
-import java.util.Random;
-
-public abstract class Dipendente implements checkIn{
-
-    private int matricola;
-    private int stipendio;
 
 
-    public Dipendente(int matricola, int stipendio, Dipartimento dipartimento){
+public abstract class Dipendente {
+
+    protected String matricola;
+    protected int stipendio;
+    protected Dipartimento dipartimento;
+
+    public Dipendente(String matricola,  Dipartimento dipartimento){
         this.matricola=matricola;
-        this.stipendio=stipendio;
-    }
-    public double getStipendio() {
-        return stipendio;
+        this.dipartimento=dipartimento;
     }
 
-    public void setStipendio(double stipendio) {
-        this.stipendio = (int) stipendio;
+    public Dipartimento getDipartimento() {
+        return dipartimento;
     }
 
-    public int getMatricola() {
+    public void setDipartimento(Dipartimento dipartimento) {
+        this.dipartimento = dipartimento;
+    }
+
+    public String getMatricola() {
         return matricola;
     }
 
-    public void setMatricola(int matricola) {
-        this.matricola = matricola;
-    }
+    public abstract int calcolaStipendio();
 
-    private static int calculateSalary(){
-        if(DipendenteFullTime==true){
-            int stipendio=2500;
-        }else{
-            Dipendente
-        }
+    @Override
+    public String toString() {
+        return "Dipendente{" +
+                "matricola='" + matricola + '\'' +
+                ", stipendio=" + stipendio +
+                ", dipartimento=" + dipartimento +
+                '}';
     }
 }
