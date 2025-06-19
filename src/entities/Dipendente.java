@@ -1,7 +1,9 @@
 package entities;
 
 
-public abstract class Dipendente {
+import interfaces.checkIn;
+
+public abstract class Dipendente implements checkIn {
 
     protected String matricola;
     protected int stipendio;

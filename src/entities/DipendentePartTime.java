@@ -15,4 +15,8 @@ public class DipendentePartTime extends Dipendente{
     public int calcolaStipendio() {
         return pagaOraria*orePagate;
     }
+
+    public void checkIn(){
+        System.out.println("CheckIn eseguito alle 14:00");
+    }
 }
